@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hermes Backup</title>
+<style>
+  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+         max-width: 40rem; margin: 3rem auto; padding: 0 1.25rem; line-height: 1.6;
+         color: #1a1a1a; }
+  h1 { font-size: 1.5rem; }
+  code { background: #f2f2f2; padding: .1rem .3rem; border-radius: 3px; }
+  footer { margin-top: 2.5rem; font-size: .875rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Hermes Backup</h1>
+
+<p>
+  Hermes Backup is a private automation that keeps versioned snapshots of its
+  owner's own configuration files. It runs unattended once a day on the owner's
+  machine and uploads a single archive to a folder inside the owner's own Google
+  Drive account.
+</p>
+
+<h2>What it does</h2>
+<ul>
+  <li>Creates one compressed archive of the owner's configuration, skills and notes.</li>
+  <li>Uploads that archive to a folder it created in the owner's Google Drive.</li>
+  <li>Keeps a rolling history (7 daily, 4 weekly, 12 monthly, and yearly copies).</li>
+</ul>
+
+<h2>What it does not do</h2>
+<ul>
+  <li>No accounts, no sign-up, no third-party users. It is used by exactly one person: its owner.</li>
+  <li>No analytics, no tracking, no advertising.</li>
+  <li>No access to any Drive file it did not create itself.</li>
+</ul>
+
+<p>
+  The application requests a single Google permission,
+  <code>drive.file</code>, which restricts it to files and folders it created
+  itself. It has no ability to read or modify the rest of the Drive.
+</p>
+
+<p><a href="privacy.html">Privacy policy</a></p>
+
+<footer>Hermes Backup &middot; personal, single-user tool</footer>
+</body>
+</html>
